@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="static/pest.css" />
+  </head>
+  <body>
+    <form action="/pest" method = 'POST' enctype="multipart/form-data">
+      <h1>Pest Identifier</h1>
+      <div class="file">
+        <input id="real" required type="file" name="file" accept="image/*" />
+      </div>
+      <div class="total">
+        <div id="cust">
+          <div class="btnbox">
+            <button id="cust-btn" type="button">Choose File</button>
+          </div>
+          <label id="cust-label" for="cust-btn">No file chosen yet!</label>
+        </div>
+        <div class="btn"><button id = "f-btn">Upload</button></div>
+      </div>
+     
+    </form>
+
+    <script type="text/javascript">
+      const real = document.getElementById("real");
+      const cust = document.getElementById("cust-btn");
+      const label = document.getElementById("cust-label");
+
+      cust.addEventListener("click", function () {
+        real.click();
+      });
+
+      real.addEventListener("change", function () {
+        if (real.value) {
+          label.innerHTML = real.value.split("\\").pop().split("/").pop();
+        } else {
+          label.innerHTML = "No file Chosen yet!";
+        }
+      });
+    </script>
+  </body>
+</html>

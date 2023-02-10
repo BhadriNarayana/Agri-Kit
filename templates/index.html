@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/index.css">
+</head>
+<body>
+    <div class="total">
+        <h1>Select your requirement</h1>
+        <div id="btn-box"><div id= "recom"><a href="/croprecom">Crop Recommendation</a></div><div id = "pestid"><a href="/pest"> Pest Identification</div></div>
+    </div>
+    <script type="text/javascript">
+        const crop = document.getElementById("recom");
+        const pest = document.getElementById("pestid");
+        
+  
+        crop.addEventListener("click", function () {
+            window.location = "/croprecom";
+        });
+  
+        pest.addEventListener("click", function () {
+            window.location = "/pest";
+          });
+      </script>
+</body>
+</html>

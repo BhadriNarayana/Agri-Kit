@@ -1,0 +1,106 @@
+body{
+    background-color: aliceblue;
+}
+.total{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    font-size: 50px;
+    color:  #ff0522;
+    font-weight: 600;
+    font-family: 'Roboto Slab', serif;
+}
+
+#btn-box{
+    display: flex;
+    width: 80%;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 12vh;
+    align-items: center;
+    
+}
+
+#btn-box div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10px;
+    
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;    
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+#btn-box div:nth-of-type(1){
+    background-color: blue;
+}
+
+#btn-box div:nth-of-type(2){
+    background-color: rgb(255, 0, 0);
+}
+
+#btn-box div:nth-of-type(1):hover{
+    background-color: rgba(0, 0, 255, 0.7);
+}
+
+#btn-box div:nth-of-type(2):hover{
+    background-color: rgb(255, 0, 0, 0.7);
+}
+
+@media(max-width:768px){
+    #btn-box{
+        flex-direction: column;
+        height: 30vh;
+        justify-content: space-evenly;
+        border: 0;
+    }
+    #btn-box div{
+        width: 100%;
+        height: 12vh;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+    
+    }
+}
+
+@media(max-width:551px){
+    h1{
+        font-size: 45px;
+        text-align: center;
+    }
+}
+
+@media(max-width:430px){
+    h1{
+        font-size: 35px;
+    }
+}
+
+@media(max-width:430px){
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    #btn-box div{
+        width: 100%;
+        height: 10vh;
+       
+    
+    }
+}

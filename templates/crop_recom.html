@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="static/crop_recom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&family=Roboto:ital,wght@1,300&family=Sora:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+       <h1> Crop Recommendation System </h1>
+    </div>
+            <form action="/croprecom" method = 'POST'>
+                <div class="form">
+                <div><label for="n">Ratio of Nitrogen content in soil</label><input type="text" required name = "n" id = "n"></div>
+                <div><label for="p">Ratio of Phosphorous content in soil</label><input type="text" required name = "p" id = "p"></div>
+                <div><label for="k">Ratio of Potassium content in soil</label><input type="text" required name = "k" id = "k"></div>
+                <div><label for="t">Temperature in degree Celsius</label><input type="text" required name = "t" id = "t"></div>
+                <div><label for="h">Relative humidity in %</label><input type="text" required name = "h" id = "h"></div>
+                <div><label for="ph">PH value of the soil</label><input type="text" required name = "ph" id = "ph"></div>
+                <div><label for="r">Rainfall in mm</label><input type="text" required name = "r" id = "r"></div>
+                </div>
+                <div class= "btn"><button>Submit</button></div>
+            </form>
+
+</body>
+</html>

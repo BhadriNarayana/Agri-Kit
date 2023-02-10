@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0
+    ;
+
+}
+.total{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 100vh;
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+.cont{
+    font-family: 'Raleway', sans-seri;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 1166px) {
+    h1{
+        font-size: 40px;
+    }
+    .cont{
+        
+        font-size: 25px;
+    }
+
+  }
+
+  @media (max-width: 368px) {
+    h1{
+        font-size: 35px;
+    }
+    .cont{
+        
+        font-size: 20px;
+    }
+
+  }

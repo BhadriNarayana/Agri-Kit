@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+}
+
+h1:nth-of-type(1){
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 50px;
+    
+}
+h1:nth-of-type(2){
+    text-align: center;
+    font-family: 'Raleway', sans-seri;
+    font-size: 50px;
+    margin-top: 20px;
+    
+}
+
+@media (max-width: 432px) {
+    h1:nth-of-type(1){
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        font-size: 35px;
+        
+    }
+    h1:nth-of-type(2){
+        text-align: center;
+        font-family: 'Raleway', sans-seri;
+        font-size: 35px;
+        
+    }
+
+  }
