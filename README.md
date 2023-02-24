@@ -1,4 +1,4 @@
-# Agri-Kit(Flask and Tensorflow based Web Application for crop recommendation and pest identification.)
+# Agri-Kit (A Flask and Tensorflow based Web Application for crop recommendation and pest identification.)
 
 
 
