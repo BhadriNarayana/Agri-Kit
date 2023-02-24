@@ -1,6 +1,6 @@
-## Agri-Kit
+# Agri-Kit(Flask and Tensorflow based Web Application for crop recommendation and pest identification.)
 
-## Python based web for crop recommendation and pest identification.
+
 
 ## To start the app, run:
 
